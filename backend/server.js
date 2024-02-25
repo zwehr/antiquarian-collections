@@ -6,7 +6,9 @@ const bookRoutes = require('./routes/books');
 
 const app = express();
 
-// Middleware, currently just logging request path and method
+// Middleware
+app.use(express.json());
+
 app.use((req, res, next) => {
   console.log(req.path, req.method);
   next();
