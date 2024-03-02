@@ -33,8 +33,23 @@ header a {
   text-decoration: none;
 }
 
+input,
+textarea,
+select {
+  margin-bottom: 12px;
+}
+
 .pages {
   max-width: 1400px;
   padding: 20px;
   margin: 0 auto;
+}
+
+.books-form-container {
+  display: flex;
+}
+
+.books,
+.add-book-form {
+  flex: 1;
 }
