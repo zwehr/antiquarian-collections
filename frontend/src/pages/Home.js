@@ -34,35 +34,42 @@ const Home = () => {
 
             <label for='author'>Author (optional):</label>
             <br />
-            <input type='text' id='author' name='author' required />
+            <input type='text' id='author' name='author' />
             <br />
 
             <label for='year'>Year:</label>
             <br />
-            <input type='text' id='year' name='year' />
+            <input type='text' id='year' name='year' required />
             <br />
 
             <label htmlFor='binding'>Binding:</label>
             <br />
-            <select id='binding' name='binding'>
-              <option value='binding-1'>Dropdown or text input?</option>
-              <option value='binding-2'>Binding Type #2</option>
-              <option value='binding-3'>Binding Type #3</option>
-            </select>
+            <input type='text' id='binding' name='binding' required />
             <br />
 
-            <label htmlFor='ownership-marking'>Mark of Ownership:</label>
+            <label htmlFor='provenance'>Provenance:</label>
             <br />
-            <input
-              type='text'
-              id='ownership-marking'
-              placeholder='larger text area?'
-            />
+            <textarea name='provenance' id='provenance' />
             <br />
 
             <label htmlFor='purchase-year'>Purchase Year:</label>
             <br />
-            <input type='text' id='purchase-year' name='purchase-year' />
+            <input
+              type='text'
+              id='purchase-year'
+              name='purchase-year'
+              required
+            />
+            <br />
+
+            <label htmlFor='purchased-from'>Purchased From:</label>
+            <br />
+            <input
+              type='text'
+              name='purchased-from'
+              id='purchased-from'
+              required
+            />
             <br />
 
             <label for='purchase-price'>Purchase Price:</label>
@@ -87,7 +94,7 @@ const Home = () => {
 
             <label htmlFor='notes'>Notes:</label>
             <br />
-            <textarea id='notes' name='notes'></textarea>
+            <textarea id='notes' name='notes' />
             <br />
 
             <input type='submit' value='Add New Book' />
