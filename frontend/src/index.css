@@ -34,7 +34,8 @@ header a {
 }
 
 input,
-textarea {
+textarea,
+select {
   margin-bottom: 16px;
   width: 50%;
 }
