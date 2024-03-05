@@ -11,6 +11,36 @@ const bookSchema = new Schema(
     author: {
       type: String,
     },
+    year: {
+      type: Number,
+      required: true,
+    },
+    binding: {
+      type: String,
+      required: true,
+    },
+    provenance: {
+      type: String,
+    },
+    purchaseYear: {
+      type: Number,
+      required: true,
+    },
+    purchasedFrom: {
+      type: String,
+      required: true,
+    },
+    purchasePrice: {
+      type: Number,
+      required: true,
+    },
+    currentPrice: {
+      type: Number,
+      required: true,
+    },
+    notes: {
+      type: String,
+    },
   },
   { timestamps: true }
 );

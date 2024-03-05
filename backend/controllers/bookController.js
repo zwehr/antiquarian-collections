@@ -27,10 +27,32 @@ const getBook = async (req, res) => {
 
 // Create new book
 const createBook = async (req, res) => {
-  const { title, author } = req.body;
+  const {
+    title,
+    author,
+    year,
+    binding,
+    provenance,
+    purchaseYear,
+    purchasedFrom,
+    purchasePrice,
+    currentPrice,
+    notes,
+  } = req.body;
 
   try {
-    const book = await Book.create({ title, author });
+    const book = await Book.create({
+      title,
+      author,
+      year,
+      binding,
+      provenance,
+      purchaseYear,
+      purchasedFrom,
+      purchasePrice,
+      currentPrice,
+      notes,
+    });
     res.status(200).json(book);
   } catch (error) {
     res.status(400).json({ error: error.message });
