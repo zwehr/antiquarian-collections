@@ -8,18 +8,27 @@
   --primary: #1aac83;
   --error: #e7195a;
 }
+
 body {
   background: #f1f1f1;
   margin: 0;
   font-family: 'Lato';
 }
+
 h1,
 h2 {
   font-family: 'Quintessential';
 }
+
+h3 {
+  font-size: x-large;
+  margin-top: 0;
+}
+
 header {
   background: #fff;
 }
+
 header .container {
   max-width: 1400px;
   margin: 0 auto;
@@ -28,6 +37,7 @@ header .container {
   align-items: center;
   justify-content: space-between;
 }
+
 header a {
   color: #333;
   text-decoration: none;
@@ -64,4 +74,19 @@ textarea {
 .books,
 .add-book-form {
   flex: 1;
+}
+
+.add-book-form {
+  margin-top: 24px;
+}
+
+.book-details {
+  background-color: #ccc;
+  padding: 16px 4px 4px 16px;
+  margin: 16px 72px 16px 0;
+  border-radius: 10px;
+}
+
+.book-detail {
+  font-weight: bold;
 }
