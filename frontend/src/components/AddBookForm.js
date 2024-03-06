@@ -197,6 +197,7 @@ export default function AddBookForm() {
       <br />
 
       <input type='submit' value='Add New Book' />
+      {error && <div className='error'>{error}</div>}
     </form>
   );
 }
