@@ -1,5 +1,6 @@
 require('dotenv').config();
 
+const cors = require('cors');
 const express = require('express');
 const mongoose = require('mongoose');
 const bookRoutes = require('./routes/books');
@@ -12,6 +13,8 @@ app.use((req, res, next) => {
   console.log(req.path, req.method);
   next();
 });
+
+app.use(cors());
 
 // routes
 app.use('/api/books', bookRoutes);
